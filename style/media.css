@@ -1,0 +1,141 @@
+@media (max-width: 1180px){
+    .container{
+        width: 80%;
+    }
+
+}
+@media (max-width: 950px){
+    .stories{
+        grid-template-rows: repeat(3, 1fr 0) 1fr;
+    }
+    .story{
+        grid-template-columns: 1fr 1fr;
+    }
+    .line{
+        background-color: white;
+    }
+    .story:nth-of-type(1) div:nth-of-type(3), .story:nth-of-type(3) div:nth-of-type(1), .story:nth-of-type(7) div:nth-of-type(1), .story:nth-of-type(5) div:nth-of-type(3){
+        display: none;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 900px){
+    .header-up > .logo{
+        padding-left: 20px;
+    }
+    .header-up > nav{
+        padding-right: 20px;
+    }
+    .floor .services{
+        display: block;
+    }
+
+    .floor .service{
+        width: 80%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .sites{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sponsors{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px){
+    .workers{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 700px){
+    .header-up{
+        position: relative;
+    }
+    .header-up nav ul{
+        display: none;
+    }
+    .header-up .fa-bars{
+        display: inline-block;
+        font-size: 40px;
+        margin-right: 40px;
+        color: #f2d048;
+        cursor: pointer;
+    }
+    .header-up .fa-bars:hover + ul, nav:hover > ul{
+        display: block;
+        position: absolute;
+        top: 89px;
+        right: 10px;
+    }
+    .header-up .fa-bars:hover + nav > ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-up nav ul a{
+        display: inline-block;
+        padding: 5px 0px;
+    }
+    .header-up nav ul li{
+        padding-right: 0;
+    }
+    .personal-information{
+        grid-template-columns: 100%;
+    }
+    .personal-information input{
+        height: 45px;
+    }
+    .personal-information input:nth-of-type(4){
+        height: 200px;
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+
+    .personal-information button{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+    footer > p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 550px){
+    .header-down p{
+        font-size: 24px;
+    }
+    .header-down h1{
+        font-size: 45px;
+    }
+    .sites{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .story{
+        grid-template-columns: 1fr;
+    }
+    .story:nth-of-type(1) div:nth-of-type(2), .story:nth-of-type(3) div:nth-of-type(2), .story:nth-of-type(7) div:nth-of-type(2), .story:nth-of-type(5) div:nth-of-type(2){
+        display: none;
+    }
+    .story:nth-of-type(1) h3, .story:nth-of-type(1) p, .story:nth-of-type(5) h3, .story:nth-of-type(5) p, .story:nth-of-type(3) h3, .story:nth-of-type(3) p, .story:nth-of-type(7) h3, .story:nth-of-type(7) p{
+        text-align: center;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    footer > p{
+        padding-bottom: 20px;
+    }
+
+}
+@media (max-width: 450px){
+    .sponsors{
+        grid-template-columns: 1fr;
+    }
+}
